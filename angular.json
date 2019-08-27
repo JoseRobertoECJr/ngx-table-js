@@ -120,6 +120,41 @@
           }
         }
       }
+    },
+    "NgxTableJs": {
+      "projectType": "library",
+      "root": "projects/ngx-table-js",
+      "sourceRoot": "projects/ngx-table-js/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-table-js/tsconfig.lib.json",
+            "project": "projects/ngx-table-js/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-table-js/src/test.ts",
+            "tsConfig": "projects/ngx-table-js/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-table-js/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-table-js/tsconfig.lib.json",
+              "projects/ngx-table-js/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "tablejs"
 }

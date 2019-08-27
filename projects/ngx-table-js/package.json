@@ -1,0 +1,14 @@
+{
+  "name": "ngx-table-js",
+  "version": "0.0.1",
+  "description": "A table library for Angular 8",
+  "author": "joserobertoecjr",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.2.3",
+    "@angular/core": "^8.2.3"
+  }
+}
