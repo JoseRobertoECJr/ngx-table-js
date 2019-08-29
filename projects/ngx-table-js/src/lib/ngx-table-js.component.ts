@@ -12,9 +12,9 @@ export class NgxTableJsComponent implements OnInit {
 
   @ViewChildren('filter') filterArrayElement: QueryList<ElementRef<HTMLInputElement>>
 
-  @Output() onFilterChange: EventEmitter<unknown>
-  @Output() onRowClick: EventEmitter<unknown>
-  @Output() onRowDblClick: EventEmitter<unknown>
+  @Output() onFilterChange: EventEmitter<FilterEvent>
+  @Output() onRowClick: EventEmitter<RowEvent>
+  @Output() onRowDblClick: EventEmitter<RowEvent>
 
   @Input() set objArray(objArray: Array<Object>){
     if(!objArray)
