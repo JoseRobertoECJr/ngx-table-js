@@ -1,0 +1,24 @@
+<div>
+    <a (click)="changePage(-1)"><</a>
+    <a>{{page}}</a>
+    <a (click)="changePage(1)">></a>
+</div>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th *ngFor="let key of objArr[0] | objKeys">{{ key }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td *ngFor="let key of objArr[0] | objKeys">
+                    <input #filter placeholder="{{key}}" (keydown.enter)="emitFilterEvent()" type="text">
+                </td>
+            </tr>
+            <tr *ngFor="let objEl of objArr; let i = index" (click)="changeActiveRow(i)" (dblclick)="emitRowDblClickEvent(i)" [ngClass]="{ 'active-row': activeRow == i }">
+                <td *ngFor="let key of objArr[0] | objKeys">{{ objEl[key] | toFriendly: objArr[0]?[key] }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
