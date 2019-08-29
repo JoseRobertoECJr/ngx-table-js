@@ -12,8 +12,7 @@ Install the library with npm
 
 Import `NgxTableJsModule` in the root module:
 
-`
-import { NgxTableJsModule } from 'ngx-table-js'
+`import { NgxTableJsModule } from 'ngx-table-js'
 
 @NgModule({
     imports: [
@@ -21,8 +20,7 @@ import { NgxTableJsModule } from 'ngx-table-js'
         NgxTableJsModule,
         // ...
     ]
-})
-`
+})`
 
 Import component in the local you want to use in your template:
 
