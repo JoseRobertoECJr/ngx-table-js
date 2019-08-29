@@ -5,7 +5,7 @@
   "author": "joserobertoecjr",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/JoseRobertoECJr/ngx-table-js"
   },
   "peerDependencies": {
     "@angular/common": "^8.2.3",
