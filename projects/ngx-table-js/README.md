@@ -60,7 +60,7 @@ The event is triggered on table row double click. It emits a `RowEvent`.
 
 #### Event classes
 
-`
+```
 export class RowEvent{
     index: number
     value: Object
@@ -70,9 +70,9 @@ export class RowEvent{
         this.value = value
     }
 }
-`
+```
 
-`
+```
 import { Filter } from './Filter';
 
 export class FilterEvent{
@@ -85,11 +85,11 @@ export class FilterEvent{
     }
 
 }
-`
+```
 
 #### Filter class
 
-`
+```
 export class Filter{
     field: string
     value: any
@@ -98,7 +98,8 @@ export class Filter{
         this.field = field
         this.value = value
     }
-}`
+}
+```
 
 ## Angular notes:
 
